@@ -8,7 +8,7 @@ const index = ({projects}: any) => {
           <div className={variable.mobileBody}>
         {projects?.map((project: any, index: number) => (
 
-          <Link href={project.link} key={index}>
+          <Link href={project.link} key={index} target='_blank'>
             <div
               className={variable.mobileModal}
               style={{ backgroundColor: project.color }}

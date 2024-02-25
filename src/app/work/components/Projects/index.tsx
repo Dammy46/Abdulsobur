@@ -78,7 +78,7 @@ const Projects = () => {
 
         <div className={variable.card} key={index}>
           <div className={variable.cardContainer}>
-            <Link href={item.link} onMouseEnter={(e) => {manageModal(true, index, e.clientX, e.clientY)}} onMouseLeave={(e) => {manageModal(false, index, e.clientX, e.clientY)}} onMouseMove={(e) => manageModal(true, index, e.clientX, e.clientY)}>
+            <Link href={item.link} target='_blank' onMouseEnter={(e) => {manageModal(true, index, e.clientX, e.clientY)}} onMouseLeave={(e) => {manageModal(false, index, e.clientX, e.clientY)}} onMouseMove={(e) => manageModal(true, index, e.clientX, e.clientY)}>
               <div className={variable.cardImg}>
                 <div className={variable.overlay} style={{backgroundColor: item.color}}/>
                 <div className={`${variable.overlay} ${variable.overlayImg}`} style={{backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', backgroundImage: `url('./images/${item.src}')` }}></div>
