@@ -42,7 +42,7 @@ const Hero = () => {
             <div className={variable.desc}>
               <p>
                 <span>Hello, I&apos;m Abdulsobur </span> <br />
-                I&apos;m a Frontend Developer with 2 years of experience, passionate
+                I&apos;m a Frontend Developer with proven experience, passionate
                 about creating user-friendly websites using HTML, CSS,
                 JavaScript, and frameworks like React!
               </p>

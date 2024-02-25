@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     title: "Abdulsobur Portfolio",
-    description: "My Website Description",
+    description: "Abdulsobur is a frontend developer with proven experience, passionate about creating user-friendly websites using HTML, CSS, JavaScript, and frameworks like React!",
     siteName: "Abdulsobur",
-    images: 'https://res-console.cloudinary.com/heasyresource/thumbnails/v1/image/upload/v1707579021/YWJkdWxzb2J1cl9xbGJxaGo=/grid_landscape'
+    images: 'https://res-console.cloudinary.com/heasyresource/thumbnails/v1/image/upload/v1708877576/U2NyZWVuc2hvdF8yMDI0LTAyLTI1XzE3MTIxM19zbGl1bHI=/grid_landscape'
   },
 };
 

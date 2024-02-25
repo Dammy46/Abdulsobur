@@ -7,6 +7,7 @@
   a {
     position: relative;
     outline: none;
+    text-wrap: nowrap;
     &::before {
       position: absolute;
       content: "";
