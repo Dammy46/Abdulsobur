@@ -1,0 +1,199 @@
+.heroHeader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #edf2f8;
+  overflow: hidden;
+  scroll-snap-align: start;
+  .boxWrap {
+    position: absolute;
+    inset: 0;
+    margin: 0 14rem;
+    top: 170px;
+    bottom: 0;
+
+    .box {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      height: 450px;
+      border-radius: 16px;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 270px;
+        height: 260%;
+        background-color: #edf2f8;
+        animation: animate 4s linear infinite;
+        box-shadow: 0 0 20px rgb(8, 8, 8);
+        @media (min-width: 2559px) {
+          height: 500%;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        background-color: #edf2f8;
+        border-radius: 16px;
+      }
+    }
+    @media (min-width: 2559px) {
+      top: 312px;
+    }
+    @media (max-width: 1024px) {
+      margin: 0 12rem;
+    }
+    @media (max-width: 900px) {
+      margin: 0 10rem;
+    }
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+  .introWrap {
+    margin: 0 7rem;
+    position: relative;
+    top: 10%;
+    left: 0;
+    z-index: 10;
+    background-color: #edf2f8;
+    .introContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      svg {
+        @media (max-width: 900px) {
+          width: 560px;
+          height: 90px;
+        }
+        @media (max-width: 680px) {
+          width: 350px;
+          height: 60px;
+        }
+        @media (max-width: 400px) {
+          width: 280px;
+          height: 50px;
+        }
+      }
+      h1 {
+        font-size: 7rem;
+        text-transform: capitalize;
+        font-weight: 700;
+      }
+      p {
+        font-size: 1.25em;
+        letter-spacing: 1px;
+        .share {
+          font-weight: 700;
+          a {
+            &:active,
+            &:focus {
+              color: #313bac;
+            }
+          }
+        }
+      }
+      .paragraph {
+        display: flex;
+      }
+    }
+    @media (max-width: 1024px) {
+      margin: 0 5rem;
+    }
+    @media (max-width: 900px) {
+      margin: 0 3.7rem;
+    }
+    @media (max-width: 680px) {
+      margin: 0 1rem;
+      top: 31%;
+    }
+  }
+  .arrowDown {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    animation: scroll-down 1.5s infinite ease-out;
+    @media (max-width: 680px) {
+      display: none;
+    }
+  }
+}
+.animatedText {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  animation: fill 0.5s ease forwards 7.4s;
+  path:nth-child(7) {
+    stroke-dasharray: 571px;
+    stroke-dashoffset: 571px;
+    animation: animate-text 2s ease forwards 5s;
+  }
+  path:nth-child(6) {
+    stroke-dasharray: 365px;
+    stroke-dashoffset: 365px;
+    animation: animate-text 2s ease forwards 5.2s;
+  }
+
+  path:nth-child(5) {
+    stroke-dasharray: 299px;
+    stroke-dashoffset: 299px;
+    animation: animate-text 2s ease forwards 5.4s;
+  }
+  path:nth-child(4) {
+    stroke-dasharray: 409px;
+    stroke-dashoffset: 409px;
+    animation: animate-text 2s ease forwards 5.6s;
+  }
+  path:nth-child(3) {
+    stroke-dasharray: 467px;
+    stroke-dashoffset: 467px;
+    animation: animate-text 2s ease forwards 5.8s;
+  }
+  path:nth-child(2) {
+    stroke-dasharray: 209px;
+    stroke-dashoffset: 209px;
+    animation: animate-text 2s ease forwards 6s;
+  }
+  path:nth-child(1) {
+    stroke-dasharray: 405px;
+    stroke-dashoffset: 405px;
+    animation: animate-text 2s ease forwards 6.2s;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #000;
+  }
+}
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

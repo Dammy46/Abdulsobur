@@ -1,0 +1,33 @@
+.heroWrap {
+  padding: 200px 0 100px;
+  position: relative;
+  .container {
+    padding: 0 123px;
+    margin: 0 auto;
+    h1 {
+      font-weight: 400;
+      font-size: 5rem;
+      span {
+        display: block;
+      }
+      @media (max-width: 900px) {
+        font-size: 3.5rem;
+      }
+      @media (max-width: 680px) {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 900px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 680px) {
+      padding: 0 15px;
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 200px 0 50px;
+  }
+  @media (max-width: 680px) {
+    padding: 100px 0 50px;
+  }
+}

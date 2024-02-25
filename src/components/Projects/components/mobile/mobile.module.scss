@@ -1,0 +1,73 @@
+.mobileBody {
+  display: none;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 2rem;
+  gap: 25px;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    &:active,
+    &:focus {
+      opacity: 0.5;
+      outline: none;
+    }
+    .mobileModal {
+      height: 350px;
+
+      width: 300px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: auto;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+    .mobileInfo {
+      width: 100%;
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      h4 {
+        font-size: 30px;
+        font-weight: 400;
+      }
+      .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #1c1d202d;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .additionalInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 900px) {
+    display: flex;
+  }
+  @media (max-width: 600px) {
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}

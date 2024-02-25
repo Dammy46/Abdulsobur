@@ -1,0 +1,134 @@
+.projects {
+  display: flex;
+  align-items: center;
+  padding-left: 123px;
+  padding-right: 123px;
+  flex-direction: column;
+  margin-top: 300px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  .sectionTitle {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    h5 {
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      font-size: 15px;
+      opacity: 0.5;
+    }
+    @media (max-width: 900px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .body {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  .modalContainer {
+    height: 350px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+    @media (max-width: 900px) {
+      height: 300px;
+      width: 350px;
+    }
+    @media (max-width: 680px) {
+      height: 250px;
+      width: 300px;
+    }
+  }
+
+  .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal img {
+    height: auto;
+  }
+
+  .cursor,
+  .cursorLabel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #313bac;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+  }
+
+  .cursorLabel {
+    background-color: transparent;
+  }
+  .moreBtn {
+    @media (max-width: 900px) {
+      margin-top: 3rem;
+    }
+    margin-top: 3rem;
+  }
+  @media (max-width: 1200px) {
+    padding: 0 80px;
+  }
+  @media (max-width: 900px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 680px) {
+    padding: 0 15px;
+    margin-top: 180px;
+  }
+}
+.circleContainer {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  display: none;
+  .circle {
+    height: 1550%;
+    width: 120%;
+    left: -10%;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+  }
+  @media (max-width: 900px) {
+    display: block;
+  }
+}

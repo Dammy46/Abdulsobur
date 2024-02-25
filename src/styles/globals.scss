@@ -1,0 +1,31 @@
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  cursor: wait;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}

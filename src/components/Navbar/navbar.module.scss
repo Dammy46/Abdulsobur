@@ -1,0 +1,224 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  background: transparent;
+  z-index: 5;
+  transform: translate(0, 0) rotate(0.001deg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  a {
+    cursor: pointer;
+    border: 0;
+    color: #000;
+    background: transparent;
+    border-radius: 2.125em;
+    height: 4.25em;
+    padding: 0;
+    font-size: 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    will-change: transform;
+    outline: 0;
+    transform: translateZ(0) rotate(0.001deg);
+  }
+  .noHeight {
+    height: inherit !important;
+    .indicator {
+      top: 40px !important;
+    }
+  }
+  .authorWrap {
+    display: flex;
+    p {
+      margin: 0px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    }
+    .name {
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-left: 5px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      p {
+        position: relative;
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        &:nth-of-type(2) {
+          padding-left: 0.3em;
+        }
+        &:nth-of-type(3) {
+          position: absolute;
+          left: 145px;
+          padding-left: 0.3em;
+        }
+      }
+    }
+    &:hover {
+      .copyright {
+        transform: rotate(360deg);
+      }
+      .name {
+        padding-right: 30px;
+        .codeBy {
+          transform: translateX(-100%);
+        }
+        .abdulsobur {
+          transform: translateX(-65px);
+          padding-left: 0.6em;
+        }
+        .abdulazeez {
+          transform: translateX(-65px);
+        }
+      }
+    }
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 0 2.5em;
+      z-index: 2;
+      color: var(--color-dark);
+      position: relative;
+      transform: rotate(0.001deg);
+      pointer-events: none;
+      will-change: transform, color;
+    }
+  }
+  .indicator {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+
+    background-color: #313bac;
+    border-radius: 50%;
+    transform: scale(0) translateX(-50%);
+    transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  .navLinks {
+    display: flex;
+    .link {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      padding: 15px;
+      cursor: pointer;
+      &:hover {
+        color: #313bac;
+        .indicator {
+          transform: scale(1);
+        }
+      }
+      &:focus,
+      &:active {
+        color: #313bac;
+      }
+      .indicator {
+        top: 65px;
+        left: 50%;
+      }
+    }
+    .active {
+      color: #313bac;
+      .indicator {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 680px) {
+    padding: 15px;
+  }
+}
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  right: 0px;
+  z-index: 9999;
+  top: 0;
+
+  .button {
+    position: relative;
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1c1d20;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 40%;
+      margin: auto;
+      background-color: white;
+      position: relative;
+      transition: transform 0.3s;
+    }
+
+    &::after {
+      top: -5px;
+    }
+
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      transform: rotate(45deg);
+      top: -1px;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: 0px;
+    }
+  }
+}
+.mobileTrigger {
+  display: none;
+  position: relative;
+  span {
+    padding: 15px;
+    font-size: 1em;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #000;
+      left: 0;
+      top: 8px;
+    }
+  }
+  @media (max-width: 900px) {
+    display: block;
+  }
+}

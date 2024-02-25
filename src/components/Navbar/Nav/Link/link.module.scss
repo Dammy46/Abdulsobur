@@ -1,0 +1,47 @@
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    @media (max-width: 680px) {
+      right: 0;
+      left: auto;
+    }
+  }
+  .anchor {
+    outline: none;
+    &:active,
+    &:focus {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        transform: scale(1, 1);
+        transition: background-color 0.5s ease-in-out;
+        bottom: -3px;
+        animation: link ease 1s 1 300ms;
+        transform-origin: right;
+      }
+    }
+  }
+}
+@keyframes link {
+  50% {
+    transform: scaleX(0);
+  }
+  50.1% {
+    transform: translateX(-100%) scalex(-0.01);
+  }
+  100% {
+    transform: translateX(-100%) scalex(-1);
+  }
+}
