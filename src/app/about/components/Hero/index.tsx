@@ -42,14 +42,18 @@ const Hero = () => {
             <div className={variable.desc}>
               <p>
                 <span>Hello, I&apos;m Abdulsobur </span> <br />
-                I&apos;m a Frontend Developer with proven experience, passionate
-                about creating user-friendly websites using HTML, CSS,
-                JavaScript, and frameworks like React!
+                I&apos;m a Frontend Developer with over 2 years of experience,
+                specializing in crafting responsive, user-focused interfaces
+                using modern technologies like JavaScript, TypeScript, React.js,
+                and Next.js. I have a strong track record of building and
+                optimizing web applications, integrating state management tools
+                such as Redux and Zustand, and ensuring seamless backend
+                integration with Node.js.
               </p>
 
               <p>
-                I love staying updated with the latest trends and I&apos;m eager to
-                grow in dynamic environments. Let&apos;s build remarkable web
+                I love staying updated with the latest trends and I&apos;m eager
+                to grow in dynamic environments. Let&apos;s build remarkable web
                 experiences together!
               </p>
             </div>

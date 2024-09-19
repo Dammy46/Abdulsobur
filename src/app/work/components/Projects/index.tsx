@@ -88,8 +88,8 @@ const Projects = () => {
                 <div className={variable.divider}/>
               </div>
               <div className={variable.additionalInfo}>
-                <p>Development</p>
-                <p>2023</p>
+                <p>{item.category}</p>
+                <p>{item.year}</p>
               </div>
             </Link>
           </div>

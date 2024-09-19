@@ -49,7 +49,6 @@ export default function Projects() {
       duration: 0.5,
       ease: "power3",
     });
-    //Move cursor label
     xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {
       duration: 0.45,
       ease: "power3",
@@ -84,7 +83,7 @@ export default function Projects() {
         <h5>recent works</h5>
       </div>
       <div className={variable.body}>
-        {projects.map((project, index) => {
+        {projects.slice(0, 3).map((project, index) => {
           return (
             <Project
               index={index}
@@ -96,7 +95,7 @@ export default function Projects() {
           );
         })}
       </div>
-      <MobileWorks projects={projects} />
+      <MobileWorks projects={projects.slice(0, 3)} />
       <div className={variable.moreBtn}>
         <RoundedBtn url="/work" label="Work">
           <p>More work</p>
