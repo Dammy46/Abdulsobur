@@ -2,22 +2,6 @@ export const phrase =
   "Being a web developer, my goal is to develop interfaces that match the requested design, build robust and easily maintainable web applications.";
 export const projects = [
   {
-    title: "Ecojobz",
-    src: "ecojobz.png",
-    color: "#0cdc12",
-    link: "https://ecojobz.vercel.app/",
-    category: "Developement",
-    year: "2023",
-  },
-  {
-    title: "Ravebooking",
-    src: "ravebooking.png",
-    color: "#48d691",
-    link: "https://rvbook.vercel.app",
-    category: "Developement",
-    year: "2023",
-  },
-  {
     title: "HeasyResource",
     src: "hr.png",
     color: "#3377ff",
@@ -29,7 +13,7 @@ export const projects = [
     title: "VAAD Media",
     src: "vaad.png",
     color: "#0177AB",
-    link: "https://vaadmedia.vercel.app",
+    link: "https://www.vaad.com.ng",
     category: "Developement",
     year: "2024",
   },
@@ -45,7 +29,7 @@ export const projects = [
     title: "Runelection",
     src: "runelection.png",
     color: "#8D83CE",
-    link: "https://runelection.vercel.app/",
+    link: "https://runelection.com",
     category: "Developement",
     year: "2024",
   },
@@ -60,19 +44,19 @@ export const slider1 = [
     src: "hr1.png",
   },
   {
-    color: "#48d6914d",
-    src: "rv.png",
+    color: "#f2f2ff",
+    src: "runelection.png",
   },
 ];
 
 export const slider2 = [
   {
-    color: "#48d6914d",
-    src: "rv3.png",
+    color: "#f2f2ff",
+    src: "dashboard.png",
   },
   {
-    color: "#48d6914d",
-    src: "rv2.png",
+    color: "#f2f2ff",
+    src: "dashboard.png",
   },
   {
     color: "#3377ff4d",
@@ -96,7 +80,7 @@ export const navItems = [
 export const socials = [
   {
     name: "Twitter (X)",
-    url: "http://twitter.com/devdammy",
+    url: "http://x.com/devdammy",
   },
   {
     name: "Github",
